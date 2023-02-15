@@ -1,0 +1,38 @@
+<!-- <p>registration works!</p> -->
+<form [formGroup]="form" >
+  <!-- <form #loginForm="ngForm" (ngSubmit)="submitData(loginForm.value)"> -->
+
+    <div class="form-group row">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3" name="name" fromControlName="name" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">email</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputassword3" name="email" fromControlName="email" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">phone</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inptPassword3" naem="phone" fromControlName="phone" placeholder="Password">
+      </div>
+    </div> <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">ta</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPasswor3" name="ta" fromControlName="ta" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword3" class="col-sm-2 col-form-label">password</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPasswrd3" name="pass" fromControlName="password" placeholder="Password">
+      </div>
+    </div>
+    <button type="Submit" >save</button>
+    <button type="Submit" (click)="fetchData()">FETCH</button>
+    <button type="Submit" (click)="saveData(form)">form</button>
+    <!-- <button  (click)="updateData(loginForm.value)">UPDATE</button> -->
+  </form>
